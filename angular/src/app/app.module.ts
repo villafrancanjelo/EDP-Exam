@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/Icon";
@@ -14,12 +13,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './pages/home/home.component';
 
 
 
 const routes: Routes = [
-  {path: 'App', component: AppComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'contact', component: ContactComponent},
@@ -36,7 +33,6 @@ const routes: Routes = [
     ProfileComponent,
     GalleryComponent,
     ContactComponent,
-    HomeComponent,
     
     
   ],
