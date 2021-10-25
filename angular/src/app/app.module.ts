@@ -10,6 +10,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatListModule} from "@angular/material/list";
 import { MatDividerModule } from '@angular/material/divider';
+import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -17,6 +18,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 
 const routes: Routes = [
+  {path: 'home', component: HomeComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'contact', component: ContactComponent},
@@ -29,6 +31,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
     ProfileComponent,
     GalleryComponent,
