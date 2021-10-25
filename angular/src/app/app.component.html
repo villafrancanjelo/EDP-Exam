@@ -1,1 +1,47 @@
-<router-outlet></router-outlet>
+<body>
+  <mat-toolbar>
+      <mat-icon>
+          menu
+      </mat-icon>   
+      {{currentNav}}    
+  
+      <h1>Personal Website</h1>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+  
+          <img class="avatar mat-elevation-z8" src="https://apps.evsu.edu.ph/assets/img/students/2019/2019-04771-b5d08bb376a1f69195f9080b40e7b377.jpg">
+          <h4 class="name">Anjelo Villafranca</h4>
+          <p style="font-style: italic;color: rgb(73, 72, 72);">Future Programmer</p>
+  
+          <mat-divider></mat-divider>
+  
+          <mat-list class="list">
+              <mat-list-item> 
+                  <mat-icon class="icon">home</mat-icon> 
+                  <a routerLink="home" (click)="navClick('Home')" routerLinkActive="active" class="anchor_class">Home</a>
+              </mat-list-item>
+              
+              <mat-list-item> 
+                  <mat-icon class="icon">person</mat-icon> 
+                  <a routerLink="profile" (click)="navClick('Profile')" routerLinkActive="active" class="anchor_class">Profile</a>
+              </mat-list-item>
+              <mat-list-item>
+                  <mat-icon class="icon">image</mat-icon>
+                  <a routerLink="gallery" (click)="navClick('Gallery')" routerLinkActive="active" class="anchor_class">Gallery</a> 
+              </mat-list-item>
+              <mat-list-item> 
+                  <mat-icon class="icon">phone</mat-icon> 
+                  <a routerLink="contact" (click)="navClick('Contact')" routerLinkActive="active" class="anchor_class">Contact</a>
+              </mat-list-item>
+          </mat-list>
+      </mat-sidenav>
+      <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+      </mat-sidenav-content>
+      
+  </mat-sidenav-container>
+  </body>
+  
+  
