@@ -14,6 +14,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
@@ -35,6 +36,7 @@ const routes: Routes = [
     ProfileComponent,
     GalleryComponent,
     ContactComponent,
+    HomeComponent,
     
     
   ],
