@@ -1,10 +1,5 @@
 <body>
   <mat-toolbar>
-      <mat-icon>
-          menu
-      </mat-icon>   
-      {{currentNav}}    
-  
       <h1>Personal Website</h1>
   </mat-toolbar>
   
@@ -13,7 +8,7 @@
   
           <img class="avatar mat-elevation-z8" src="https://apps.evsu.edu.ph/assets/img/students/2019/2019-04771-b5d08bb376a1f69195f9080b40e7b377.jpg">
           <h4 class="name">Anjelo Villafranca</h4>
-          <p style="font-style: italic;color: rgb(73, 72, 72);">Future Programmer</p>
+          <p style="font-style: italic;color: rgba(19, 18, 18, 0.993);">Future Programmer</p>
   
           <mat-divider></mat-divider>
   
@@ -36,8 +31,15 @@
                   <a routerLink="contact" (click)="navClick('Contact')" routerLinkActive="active" class="anchor_class">Contact</a>
               </mat-list-item>
           </mat-list>
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 15px; text-align: center; color: black;">
+            &copy; 2021  Personal Website
+        </p>
       </mat-sidenav>
       <mat-sidenav-content class="content">
+    <pre style="color: rgb(248, 245, 245); font-size: 28px; font-family: Verdana;"> <mat-icon>menu</mat-icon>{{currentNav}} </pre> 
       <router-outlet></router-outlet>
       </mat-sidenav-content>
       
